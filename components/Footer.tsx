@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-white font-black uppercase tracking-widest text-[10px] mb-6 text-orange-500">Restaurantes em breve 🍢</h4>
             <p className="text-zinc-500 text-xs leading-relaxed">
-              A curadoria completa ainda não foi entregue. Estamos finalizando a primeira seleção de espetos em João Pessoa. Acompanhe — em breve os restaurantes entram aqui.
+              A curadoria completa ainda não foi entregue. Estamos finalizando a primeira seleção de espetos em João Pessoa. Acompanhe — em breve os restaurantes entram aqui, com avaliações e animações.
             </p>
           </div>
 
