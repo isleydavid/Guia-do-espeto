@@ -1,13 +1,12 @@
-
-import React, { useState, useEffect } from 'react';
-import LoadingScreen from './components/LoadingScreen';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import HowItWorks from './components/HowItWorks';
-import RestaurantSection from './components/RestaurantSection';
-import TeamSection from './components/TeamSection';
-import Footer from './components/Footer';
-import { AppState } from './types';
+import React, { useState } from 'react';
+import LoadingScreen from './components/LoadingScreen.tsx';
+import Navbar from './components/Navbar.tsx';
+import Hero from './components/Hero.tsx';
+import HowItWorks from './components/HowItWorks.tsx';
+import RestaurantSection from './components/RestaurantSection.tsx';
+import TeamSection from './components/TeamSection.tsx';
+import Footer from './components/Footer.tsx';
+import { AppState } from './types.ts';
 
 const App: React.FC = () => {
   const [appState, setAppState] = useState<AppState>(AppState.LOADING);
