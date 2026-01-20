@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Guia do Espeto JP</title>
+    <title>Guia do Espeto JP | Curadoria Local</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <style>
@@ -30,6 +30,15 @@
       #root {
         min-height: 100vh;
       }
+      /* Pre-render protection */
+      .loading-fallback {
+        background: #0a0a0a;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     </style>
     <script type="importmap">
 {
@@ -38,7 +47,7 @@
     "react-dom": "https://esm.sh/react-dom@19.0.0",
     "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
     "react/jsx-runtime": "https://esm.sh/react@19.0.0/jsx-runtime",
-    "framer-motion": "https://esm.sh/framer-motion@11.11.17?deps=react@19.0.0",
+    "framer-motion": "https://esm.sh/framer-motion@11.11.17?bundle&target=es2022&deps=react@19.0.0",
     "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
     "react/": "https://esm.sh/react@^19.2.3/"
   }
@@ -46,7 +55,9 @@
 </script>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div class="loading-fallback"></div>
+    </div>
     <script type="module" src="index.tsx"></script>
   </body>
 </html>
