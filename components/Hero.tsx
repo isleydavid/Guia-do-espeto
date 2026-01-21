@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 
@@ -22,18 +21,18 @@ const Hero: React.FC = () => {
             Curadoria Local de João Pessoa
           </span>
           <h1 className="text-6xl lg:text-8xl font-black tracking-tighter mb-8 leading-[0.9]">
-            SEM HYPE.<br />
-            SÓ <span className="text-orange-500">BRASA.</span>
+            BRASA DE VERDADE.<br />
+            <span className="text-orange-500">SEM MODINHA.</span>
           </h1>
           <p className="text-xl text-zinc-400 font-light mb-10 max-w-lg leading-relaxed">
-            O guia low profile dos melhores espetos de João Pessoa. Curadoria local, espeto de verdade e sem firulas.
+            Um guia independente dos melhores espetos de João Pessoa. Avaliação honesta, curadoria local e respeito à brasa.
           </p>
           <div className="flex flex-wrap gap-4">
             <a href="#restaurantes" className="px-8 py-4 bg-orange-500 hover:bg-orange-600 text-black font-black uppercase tracking-widest transition-all transform hover:scale-105">
-              Ver a Seleção
+              CONHECER O GUIA
             </a>
             <a href="#como-funciona" className="px-8 py-4 border border-white/20 hover:border-orange-500 hover:text-orange-500 font-black uppercase tracking-widest transition-all">
-              Nosso Critério
+              COMO AVALIAMOS
             </a>
           </div>
         </motion.div>
